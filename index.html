@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="window-wrapper">
+        <div class="loginWrapper">
+            <div class="windowBase"></div>
+            <div id="loginWindow" class="loginWindow"></div>
+                <div id="regWindowMask" class="regWindowMask active">
+                    <div id="regWindow" class="registerWindow active">
+                        <div class="registerLogoWrapper">
+                            <div class="registerLogo">REGISTER</div>
+
+                        </div>
+                        <div class="textArea">
+                            <div class="itemWrapper">
+                                <label for="username" class="usernameLabel">Username</label>
+                                <input type="text" id="username">
+                                <div class="underscore">
+                                    <div class="fillColor"></div>
+                                </div>
+                            </div>
+                            <div class="itemWrapper">
+                                <label for="password" class="passwordLabel">Password</label>
+                                <input type="text" id="password">
+                                <div class="underscore">
+                                    <div class="fillColor"></div>
+                                </div>
+                            </div>
+                            <div class="itemWrapper">
+                                <label for="repeatpassword" class="repeatpasswordLabel">Repeat Password</label>
+                                <input id="repeatpassword" type="text" class="repeatpassword">
+                                <div class="underscore">
+                                    <div class="fillColor"></div>
+                                </div>
+                            </div>
+                            <div class="nextButton">NEXT</div>
+                        </div>
+                    </div>
+                    <div id="switchButton" class="buttonWrapper">
+                        <div class="heng"></div>
+                        <div class="shu"></div>
+                    </div>
+                    <div class="innerMask"></div>
+                </div>
+            <!-- <div id="regWindow" class="registerWindow"></div> -->
+        </div>
+    </div>
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

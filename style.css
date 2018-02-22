@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all linear 0.4s;
+}
+
+body {
+    background-color: #88F9E5;
+}
+
+.window-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.loginWrapper {
+    position: relative;
+    width: 461px;
+    height: 552px;
+    margin-bottom: 150px;
+}
+
+.windowBase {
+    position: absolute;
+    background-color: #B6FBEF;
+    top: 0;
+    left: calc(10% / 2);
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.loginWindow {
+    border-radius: 10px;
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background-color: #FFFFFF;
+    top: 10px;
+    left: calc(5% / 2);
+}
+
+/* #registerWindow {
+    transform-origin: 0% 0%;
+} */
+
+
+
+.regWindowMask.inactive {
+    position: absolute;
+    display: flex;
+    background-color: #ED2553;
+    height: 141px;
+    width: 141px;
+    z-index: 10;
+    border-radius: 50%;
+    left: 376px;
+    top: 40px;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 50% 50%;
+}
+
+.registerWindow.inactive {
+    display: none;
+}
+
+.registerWindow.click {
+    animation: ease-in circleToSquare 0.3s;
+}
+
+
+
+/* .registerWindow .buttonWrapper {
+    border: 1px solid black;
+    position: relative;
+} */
+
+
+
+.regWindowMask.inactive .shu,
+.regWindowMask.inactive .heng {
+    width: 6px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    transform-origin: center center;
+
+}
+
+.regWindowMask.inactive .shu {
+    transform: rotate(45deg);
+}
+
+.regWindowMask.inactive .heng {
+    transform: rotate(-45deg);
+}
+
+.regWindowMask.inactive .buttonWrapper {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    transform: rotate(315deg);
+    position: absolute;
+    top: 53px;
+    left: 56px;
+    z-index: 13;
+}
+
+/*****************************************/
+
+.regWindowMask.active {
+    position: absolute;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    transform-origin: 50% 50%;
+}
+
+.registerWindow.active {
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ED2553;
+    top: 0px;
+    left: 0;
+}
+
+.registerWindow.active .registerLogoWrapper {
+    display: flex;
+    margin: 60px 0 40px 0;
+    align-items: center;
+}
+
+.registerWindow.active .registerLogo {
+    padding-left: 44px;
+    color: #ffffff;
+    font-family: "Calibri", "Franklin Gothic Demi", "Source Sans Pro Black", "Aharoni", "Cooper Black";
+    font-size: 37px;
+    line-height: 44px;
+    height: 44px;
+    border-left-color: white;
+    border-left: 4px solid white;
+    font-weight: normal;
+}
+
+.registerWindow.active label {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    font-family: "Calibri", "Tahoma";
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.registerWindow.active .itemWrapper {
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 54px;
+}
+
+.registerWindow.active .itemWrapper:nth-child(3) {
+    margin-bottom: 45px;
+}
+
+.registerWindow.active .textArea {
+    margin: 0 53px;
+}
+
+.registerWindow.active .nextButton {
+    background-color: #fff;
+    max-width: 365px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    color: #ED2553;
+    font-family: "Arial Unicode MS";
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.regWindowMask.active .buttonWrapper .shu,
+.regWindowMask.active .buttonWrapper .heng {
+    width: 6px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    transform-origin: center center;
+    z-index: 13;
+}
+
+.regWindowMask.active .buttonWrapper .shu {
+    transform: rotate(45deg);
+}
+
+.regWindowMask.active .buttonWrapper .heng {
+    transform: rotate(-45deg);
+}
+
+.regWindowMask.active .buttonWrapper {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    transform: rotate(0deg);
+    position: absolute;
+    left: 378px;
+    top: 67px;
+    z-index: 13;
+}
+
+.regWindowMask.active .textArea input {
+    border-style: none;
+    outline: none;
+    -webkit-appearance: none;
+    background: #ED2553;
+    height: 11px;
+    line-height: 11px;
+    display: block;
+}
+
+.regWindowMask.active .underscore {
+    width: 100%;
+    border: 1px solid #F77C99;
+    height: 1px;
+}
+
+.registerWindow.middleState {
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    width: 461px;
+    height: 552px;
+    background-color: #ED2553;
+    top: -35px;
+    left: 0;
+    z-index: 10;
+}
+
+
+.registerWindow.middleState .registerLogoWrapper {
+    display: flex;
+    margin: 60px 0 40px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registerWindow.middleState .registerLogo {
+    padding-left: 44px;
+    color: #ffffff;
+    font-family: "Calibri", "Franklin Gothic Demi", "Source Sans Pro Black", "Aharoni", "Cooper Black";
+    font-size: 37px;
+    line-height: 44px;
+    height: 44px;
+    border-left-color: white;
+    border-left: 4px solid white;
+    font-weight: normal;
+}
+
+.registerWindow.middleState label {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    font-family: "Calibri", "Tahoma";
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.registerWindow.middleState .itemWrapper {
+    width: 100%;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.registerWindow.middleState .itemWrapper:nth-child(3) {
+    margin-bottom: 40px;
+}
+
+.registerWindow.middleState .textArea {
+    margin: 0 53px;
+}
+
+.registerWindow.middleState .nextButton {
+    background-color: #fff;
+    max-width: 365px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    color: #ED2553;
+    font-family: "Arial Unicode MS";
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.regWindowMask.middleState .shu,
+.regWindowMask.middleState .heng {
+    width: 6px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    transform-origin: center center;
+
+}
+
+.regWindowMask.middleState .shu {
+    transform: rotate(45deg);
+}
+
+.regWindowMask.middleState .heng {
+    transform: rotate(-45deg);
+}
+
+.regWindowMask.middleState .buttonWrapper {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 157px;
+    left: 286px;
+    z-index: 13;
+}
+
+.registerWindow.middleState .textArea input {
+    border-style: none;
+    outline: none;
+    -webkit-appearance: none;
+    background: #ED2553;
+    height: 11px;
+    line-height: 11px;
+    display: block;
+}
+
+.registerWindow.middleState .underscore {
+    width: 100%;
+    border: 1px solid #F77C99;
+    height: 1px;
+}
+
+.regWindowMask.active {
+    display: block;
+}
+
+.regWindowMask.middleState {
+    position: absolute;
+    width: 100%;
+    height: 461px;
+    top: 80px;
+    left: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px #ED2553 solid;
+}
+.regWindowMask.middleState .innerMask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ED2553;
+    opacity: 0.7;
+    z-index: 11;
+    border-radius: 50%;
+}
+
+
+.regWindowPos {
+    position: relative;
+    
+}
+/* 
+.registerWindow {
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+    width: 461px;
+    height: 552px;
+    background-color: #ED2553;
+    top: -35px;
+    left: 0;
+    z-index: 10;
+}
+
+.regWindowMask {
+    position: absolute;
+    width: 100%;
+    height: 461px;
+    top: 80px;
+    left: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px #ED2553 solid;
+} */
