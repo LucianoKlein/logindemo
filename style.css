@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: all linear 0.4s;
+    transition: all cubic-bezier(.12,.91,.86,.75) 0.4s;
 }
 
 body {
@@ -53,21 +53,21 @@ body {
 
 .regWindowMask.inactive {
     position: absolute;
-    display: flex;
     background-color: #ED2553;
     height: 141px;
     width: 141px;
     z-index: 10;
     border-radius: 50%;
+    overflow: hidden;
     left: 376px;
     top: 40px;
-    justify-content: center;
-    align-items: center;
     transform-origin: 50% 50%;
 }
 
 .registerWindow.inactive {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
 }
 
 .registerWindow.click {
@@ -107,7 +107,7 @@ body {
     width: 32px;
     height: 32px;
     align-items: center;
-    transform: rotate(315deg);
+    transform: rotate(-135deg);
     position: absolute;
     top: 53px;
     left: 56px;
@@ -118,7 +118,6 @@ body {
 
 .regWindowMask.active {
     position: absolute;
-    display: flex;
     background-color: rgba(0, 0, 0, 0.0);
     width: 100%;
     height: 100%;
@@ -379,6 +378,15 @@ body {
     border-radius: 50%;
 }
 
+.regWindowMask.inactive .innerMask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ED2553;
+    opacity: 1;
+    z-index: 11;
+    border-radius: 50%;
+}
 
 .regWindowPos {
     position: relative;

@@ -26,12 +26,7 @@
                     }.bind(this))
                     
                 } else if (regWindowMask.classList.contains("inactive")) {
-                    this.fromAtoB(arr, 'inactive', 'middleState');
-                    $(regWindowMask).one('transitionend', function(ele){
-                        let arr = [];
-                        arr.push(regWindow, regWindowMask);
-                        this.fromAtoB(arr, 'middleState', 'active');
-                    }.bind(this));
+                    this.fromAtoB(arr, 'inactive', 'active');
                 }
 
             }.bind(this));
