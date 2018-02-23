@@ -8,3 +8,71 @@
     left: calc(5% / 2);
 }
 
+
+.loginLogo {
+    margin: 70px 0 56px 0;
+    font-family: "Calibri", "Franklin Gothic Demi", "Source Sans Pro Black", "Aharoni", "Cooper Black";
+    color: #ED2553;
+    font-size: 35px;
+    padding-left: 50px;
+    font-weight: bold;
+    border-left: 5px solid #ED2553;
+    letter-spacing: 3px;
+    line-height: 45px;
+    height: 45px;
+}
+
+.loginWindow .interactArea {
+
+    margin: 0 50px 0 53px;
+}
+.loginWindow .interactArea label {
+    display: block;
+    font-family: "Calibri", "Tahoma";
+    font-size: 26px;
+    font-weight: lighter;
+    color: #919191;
+    
+}
+.loginWindow .interactArea input {
+    border-style: none;
+    outline: none;
+    -webkit-appearance: none;
+    background: #FFFFFF;
+    height: 11px;
+    line-height: 11px;
+    display: block;
+}
+.loginWindow .interactArea .progressBar {
+    background-color: #E7E7E7;
+    height: 2px;
+    width: 100%;
+}
+.loginWindow .usernameArea {
+    margin-bottom: 53px;
+}
+.loginWindow .passwordArea {
+    margin-bottom: 53px;
+}
+.loginWindow .interactArea .button {
+
+    height: 67px;
+    width: 239px;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid #E7E7E7;
+    color: #E3E3E3;
+    font-family: "Arial";
+    font-size: 23px;
+    font-weight: lighter;
+    padding: 18px 0;
+}
+.loginWindow .interactArea .forgetPassword {
+    color: #C7C7C7;
+    margin: 47px auto auto auto ;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Arial";
+
+    font-weight: 100;
+} 
