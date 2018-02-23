@@ -22,7 +22,9 @@
     animation: ease-in circleToSquare 0.3s;
 }
 
-
+.registerWindow.inactive .textArea {
+    visibility: hidden;
+}
 
 /* .registerWindow .buttonWrapper {
     border: 1px solid black;
