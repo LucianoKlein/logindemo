@@ -8,50 +8,65 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/openMiddle.css">
+    <link rel="stylesheet" href="./style/login.css">
 </head>
 
 <body>
     <div class="window-wrapper">
         <div class="loginWrapper">
             <div class="windowBase"></div>
-            <div id="loginWindow" class="loginWindow"></div>
-                <div id="regWindowMask" class="regWindowMask openMiddle">
-                    <div id="regWindow" class="registerWindow openMiddle">
-                        <div class="registerLogoWrapper">
-                            <div class="registerLogo">REGISTER</div>
-
-                        </div>
-                        <div class="textArea">
-                            <div class="itemWrapper">
-                                <label for="username" class="usernameLabel">Username</label>
-                                <input type="text" id="username">
-                                <div class="underscore">
-                                    <div class="fillColor"></div>
-                                </div>
-                            </div>
-                            <div class="itemWrapper">
-                                <label for="password" class="passwordLabel">Password</label>
-                                <input type="text" id="password">
-                                <div class="underscore">
-                                    <div class="fillColor"></div>
-                                </div>
-                            </div>
-                            <div class="itemWrapper">
-                                <label for="repeatpassword" class="repeatpasswordLabel">Repeat Password</label>
-                                <input id="repeatpassword" type="text" class="repeatpassword">
-                                <div class="underscore">
-                                    <div class="fillColor"></div>
-                                </div>
-                            </div>
-                            <div class="nextButton">NEXT</div>
-                        </div>
+            <div id="loginWindow" class="loginWindow">
+                <div class="loginLogo">LOGIN</div>
+                <div class="interactArea">
+                    <div class="usernameArea">
+                        <label for="username"></label>
+                        <input type="text" id="username">
                     </div>
-                    <div id="switchButton" class="buttonWrapper">
-                        <div class="heng"></div>
-                        <div class="shu"></div>
+                    <div class="passwordArea">
+                        <label for="password"></label>
+                        <input type="text" id="password">
                     </div>
-                    <div class="innerMask"></div>
+                    <div class="button">GO</div>
+                    <div class="forgetPassword"></div>
                 </div>
+            </div>
+            <div id="regWindowMask" class="regWindowMask">
+                <div id="regWindow" class="registerWindow">
+                    <div class="registerLogoWrapper">
+                        <div class="registerLogo">REGISTER</div>
+
+                    </div>
+                    <div class="textArea">
+                        <div class="itemWrapper">
+                            <label for="username" class="usernameLabel">Username</label>
+                            <input type="text" id="username">
+                            <div class="underscore">
+                                <div class="fillColor"></div>
+                            </div>
+                        </div>
+                        <div class="itemWrapper">
+                            <label for="password" class="passwordLabel">Password</label>
+                            <input type="text" id="password">
+                            <div class="underscore">
+                                <div class="fillColor"></div>
+                            </div>
+                        </div>
+                        <div class="itemWrapper">
+                            <label for="repeatpassword" class="repeatpasswordLabel">Repeat Password</label>
+                            <input id="repeatpassword" type="text" class="repeatpassword">
+                            <div class="underscore">
+                                <div class="fillColor"></div>
+                            </div>
+                        </div>
+                        <div class="nextButton">NEXT</div>
+                    </div>
+                </div>
+                <div id="switchButton" class="buttonWrapper">
+                    <div class="heng"></div>
+                    <div class="shu"></div>
+                </div>
+                <div class="innerMask"></div>
+            </div>
             <!-- <div id="regWindow" class="registerWindow"></div> -->
         </div>
     </div>
