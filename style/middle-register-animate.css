@@ -1,4 +1,4 @@
-.registerWindow.middleState {
+.registerWindow.closeMiddle {
     display: block;
     border-radius: 10px;
     position: absolute;
@@ -11,14 +11,14 @@
 }
 
 
-.registerWindow.middleState .registerLogoWrapper {
+.registerWindow.closeMiddle .registerLogoWrapper {
     display: flex;
     margin: 60px 0 40px 0;
     justify-content: space-between;
     align-items: center;
 }
 
-.registerWindow.middleState .registerLogo {
+.registerWindow.closeMiddle .registerLogo {
     padding-left: 44px;
     color: #ffffff;
     font-family: "Calibri", "Franklin Gothic Demi", "Source Sans Pro Black", "Aharoni", "Cooper Black";
@@ -30,7 +30,7 @@
     font-weight: normal;
 }
 
-.registerWindow.middleState label {
+.registerWindow.closeMiddle label {
     display: block;
     width: 100%;
     color: #ffffff;
@@ -39,21 +39,21 @@
     font-weight: lighter;
 }
 
-.registerWindow.middleState .itemWrapper {
+.registerWindow.closeMiddle .itemWrapper {
     width: 100%;
     color: #ffffff;
     margin-bottom: 50px;
 }
 
-.registerWindow.middleState .itemWrapper:nth-child(3) {
+.registerWindow.closeMiddle .itemWrapper:nth-child(3) {
     margin-bottom: 40px;
 }
 
-.registerWindow.middleState .textArea {
+.registerWindow.closeMiddle .textArea {
     margin: 0 53px;
 }
 
-.registerWindow.middleState .nextButton {
+.registerWindow.closeMiddle .nextButton {
     background-color: #fff;
     max-width: 365px;
     height: 72px;
@@ -65,8 +65,8 @@
     font-weight: bolder;
 }
 
-.regWindowMask.middleState .shu,
-.regWindowMask.middleState .heng {
+.regWindowMask.closeMiddle .shu,
+.regWindowMask.closeMiddle .heng {
     width: 6px;
     height: 30px;
     position: absolute;
@@ -75,15 +75,15 @@
 
 }
 
-.regWindowMask.middleState .shu {
+.regWindowMask.closeMiddle .shu {
     transform: rotate(45deg);
 }
 
-.regWindowMask.middleState .heng {
+.regWindowMask.closeMiddle .heng {
     transform: rotate(-45deg);
 }
 
-.regWindowMask.middleState .buttonWrapper {
+.regWindowMask.closeMiddle .buttonWrapper {
     display: flex;
     justify-content: center;
     width: 32px;
@@ -96,7 +96,7 @@
     z-index: 13;
 }
 
-.registerWindow.middleState .textArea input {
+.registerWindow.closeMiddle .textArea input {
     border-style: none;
     outline: none;
     -webkit-appearance: none;
@@ -106,12 +106,12 @@
     display: block;
 }
 
-.registerWindow.middleState .underscore {
+.registerWindow.closeMiddle .underscore {
     width: 100%;
     border: 1px solid #F77C99;
     height: 1px;
 }
-.regWindowMask.middleState {
+.regWindowMask.closeMiddle {
     position: absolute;
     width: 100%;
     height: 461px;
@@ -121,7 +121,7 @@
     border-radius: 50%;
     border: 1px #ED2553 solid;
 }
-.regWindowMask.middleState .innerMask {
+.regWindowMask.closeMiddle .innerMask {
     width: 100%;
     height: 100%;
     position: absolute;

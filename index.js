@@ -18,11 +18,11 @@
                 let arr = [];
                 arr.push(regWindow, regWindowMask);
                 if (regWindowMask.classList.contains("active")) {
-                    this.fromAtoB(arr, 'active', 'middleState');
+                    this.fromAtoB(arr, 'active', 'closeMiddle');
                     $(regWindowMask).one('transitionend', function(ele){
                         let arr = [];
                         arr.push(regWindow, regWindowMask);
-                        this.fromAtoB(arr, 'middleState', 'inactive');
+                        this.fromAtoB(arr, 'closeMiddle', 'inactive');
                     }.bind(this))
                     
                 } else if (regWindowMask.classList.contains("inactive")) {
